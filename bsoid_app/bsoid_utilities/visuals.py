@@ -4,7 +4,7 @@ import pandas as pd
 import seaborn as sns
 import streamlit as st
 from matplotlib.axes._axes import _log as matplotlib_axes_logger
-from sklearn.metrics import plot_confusion_matrix
+from sklearn.metrics import ConfusionMatrixDisplay
 
 matplotlib_axes_logger.setLevel('ERROR')
 
@@ -12,7 +12,7 @@ matplotlib_axes_logger.setLevel('ERROR')
 def plot_bar(sub_threshold):
     st.write('If the below __% noise__ (y-axis) is unreasonable, consider refining pose-estimation software.')
     sub_threshold_df = pd.DataFrame(sub_threshold)
-    col1, col2 = st.beta_columns([3, 2])
+    col1, col2 = st.columns([3, 2])
     col1.line_chart(sub_threshold_df)
     col2.write(sub_threshold_df)
 
@@ -76,7 +76,8 @@ def plot_confusion(validate_clf, x_test, y_test):
         'Two confusion matrices - top: counts, bottom: probability with **true positives in diagonal**')
     confusion = []
     for title, normalize in titles_options:
-        cm = plot_confusion_matrix(validate_clf, x_test, y_test, cmap=sns.cm.rocket_r, normalize=normalize)
+        cm = ConfusionMatrixDisplay.from_estimator(validate_clf, x_test, y_test, cmap=sns.cm.rocket_r, normalize=normalize)
+        #cm = plot_confusion_matrix(validate_clf, x_test, y_test, cmap=sns.cm.rocket_r, normalize=normalize)
         cm.ax_.set_title(title)
         confusion.append(cm.figure_)
     return confusion

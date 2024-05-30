@@ -1,5 +1,3 @@
-from streamlit import caching
-
 from bsoid_app import data_preprocess, extract_features, clustering, machine_learner, \
     export_training, video_creator, predict
 from bsoid_app.bsoid_utilities import visuals
@@ -30,7 +28,7 @@ if st.sidebar.checkbox('Load data and preprocess', False, key='d'):
                     'and compiled into a **{}** data list. Move on to '
                     '__Extract and embed features__.'.format(len(raw_input_data), processed_input_data.shape))
         if st.checkbox('Redo?', False):
-            caching.clear_cache()
+            st.runtime.legacy_caching.clear_cache()
             processor = data_preprocess.preprocess()
             processor.compile_data()
         if st.checkbox('Show % time (possibly) occluded?', True):

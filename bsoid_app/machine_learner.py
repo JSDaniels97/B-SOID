@@ -8,7 +8,6 @@ from sklearn.model_selection import train_test_split, cross_val_score
 
 from bsoid_app.bsoid_utilities import visuals
 from bsoid_app.bsoid_utilities.load_workspace import load_classifier
-from streamlit import caching
 
 
 class protocol:
@@ -56,14 +55,14 @@ class protocol:
 
     def show_confusion_matrix(self):
         fig = visuals.plot_confusion(self.validate_clf, self.x_test, self.y_test)
-        col1, col2 = st.beta_columns([2, 2])
+        col1, col2 = st.columns([2, 2])
         col1.pyplot(fig[0])
         col2.pyplot(fig[1])
         st.write('To improve, either _increase_ minimum cluster size, or include _more data_')
 
     def show_crossval_score(self):
         fig, plt = visuals.plot_accuracy(self.validate_score)
-        col1, col2 = st.beta_columns([2, 2])
+        col1, col2 = st.columns([2, 2])
         col1.pyplot(fig)
         st.write('To improve, either _increase_ minimum cluster size, or include _more data_')
 
@@ -76,7 +75,7 @@ class protocol:
                         '__Generate video snippets for interpretation__.'.format(self.features.shape[0],
                                                                                  self.predictions.shape[0]))
             if st.checkbox('Redo?', False, key='mr'):
-                caching.clear_cache()
+                st.runtime.legacy_caching.clear_cache()
                 self.randomforest()
             if st.checkbox("Show confusion matrix on test?", False, key='ms'):
                 self.show_confusion_matrix()

@@ -20,7 +20,7 @@ from analysis_subroutines.analysis_utilities.visuals import plot_peaks
 def get_kinematics(path, name, exp, group_num, bp, fps):
     appdata_ = appdata(path, name)
     _, _, filenames2, data_new, fs_labels = appdata_.load_predictions()
-    win_len = np.int(np.round(0.05 / (1 / fps)) * 2 - 1)
+    win_len = int(np.round(0.05 / (1 / fps)) * 2 - 1)
     bout_frames = []
     term_frame = []
     pose_all_animal = []

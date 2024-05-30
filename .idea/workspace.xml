@@ -4,12 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9aa6f6e-d1a4-4971-9a43-4847aa4541e7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="b348e68a-7670-4f75-a1ef-03c745bd3c37" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/B-SOID.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/B-SOID.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements_m2.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/requirements_m2.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoid_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/bsoid_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoid_app/analysis_subroutines/analysis_scripts/extract_kinematics.py" beforeDir="false" afterPath="$PROJECT_DIR$/bsoid_app/analysis_subroutines/analysis_scripts/extract_kinematics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoid_app/analysis_subroutines/machine_performance.py" beforeDir="false" afterPath="$PROJECT_DIR$/bsoid_app/analysis_subroutines/machine_performance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoid_app/analysis_subroutines/video_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/bsoid_app/analysis_subroutines/video_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoid_app/bsoid_utilities/bsoid_classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/bsoid_app/bsoid_utilities/bsoid_classification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoid_app/bsoid_utilities/likelihoodprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/bsoid_app/bsoid_utilities/likelihoodprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoid_app/bsoid_utilities/visuals.py" beforeDir="false" afterPath="$PROJECT_DIR$/bsoid_app/bsoid_utilities/visuals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoid_app/clustering.py" beforeDir="false" afterPath="$PROJECT_DIR$/bsoid_app/clustering.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoid_app/extract_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/bsoid_app/extract_features.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoid_app/machine_learner.py" beforeDir="false" afterPath="$PROJECT_DIR$/bsoid_app/machine_learner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoid_app/video_creator.py" beforeDir="false" afterPath="$PROJECT_DIR$/bsoid_app/video_creator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoid_figs/subroutines/extract_kinematics.py" beforeDir="false" afterPath="$PROJECT_DIR$/bsoid_figs/subroutines/extract_kinematics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoid_py/classify.py" beforeDir="false" afterPath="$PROJECT_DIR$/bsoid_py/classify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoid_py/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/bsoid_py/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoid_py/utils/likelihoodprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/bsoid_py/utils/likelihoodprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoid_umap/classify.py" beforeDir="false" afterPath="$PROJECT_DIR$/bsoid_umap/classify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoid_umap/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/bsoid_umap/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoid_umap/utils/likelihoodprocessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/bsoid_umap/utils/likelihoodprocessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bsoid_umap/utils/visuals.py" beforeDir="false" afterPath="$PROJECT_DIR$/bsoid_umap/utils/visuals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/googlecolab/bsoid_master.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/googlecolab/bsoid_master.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/googlecolab/bsoid_v1_2_1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/googlecolab/bsoid_v1_2_1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,91 +44,38 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="1nOqzgHrNzFupMgdzzRD2OHGmZO" />
+  <component name="ProjectId" id="2hC82fJsO5AaKtSMmvouL9HA7Xl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a9aa6f6e-d1a4-4971-9a43-4847aa4541e7" name="Default Changelist" comment="" />
-      <created>1611271750230</created>
+      <changelist id="b348e68a-7670-4f75-a1ef-03c745bd3c37" name="Changes" comment="" />
+      <created>1717086493030</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1611271750230</updated>
-      <workItem from="1611271751789" duration="102000" />
-      <workItem from="1611333055863" duration="1882000" />
-      <workItem from="1611772079805" duration="2655000" />
-      <workItem from="1611931580997" duration="2078000" />
-      <workItem from="1611950822977" duration="1975000" />
-      <workItem from="1612033499055" duration="2150000" />
-      <workItem from="1612036772713" duration="1198000" />
-      <workItem from="1612283710208" duration="4124000" />
-      <workItem from="1612369867143" duration="2578000" />
-      <workItem from="1675957765002" duration="652000" />
-      <workItem from="1675960127190" duration="3026000" />
+      <updated>1717086493030</updated>
+      <workItem from="1717086496446" duration="3677000" />
     </task>
-    <task id="LOCAL-00001" summary="dlc-models for publication.">
-      <created>1612370293421</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1612370293421</updated>
-    </task>
-    <task id="LOCAL-00002" summary="dlc-models for publication.">
-      <created>1612372250667</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1612372250667</updated>
-    </task>
-    <task id="LOCAL-00003" summary="dlc-models for publication.">
-      <created>1612372263776</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1612372263776</updated>
-    </task>
-    <task id="LOCAL-00004" summary="dlc-models for publication.">
-      <created>1612373348495</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1612373348495</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="dlc-models for publication." />
-    <option name="LAST_COMMIT_MESSAGE" value="dlc-models for publication." />
   </component>
 </project>

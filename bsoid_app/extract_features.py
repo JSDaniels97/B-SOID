@@ -10,7 +10,6 @@ import umap
 from psutil import virtual_memory
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
-from streamlit import caching
 
 from bsoid_app.bsoid_utilities.likelihoodprocessing import boxcar_center
 from bsoid_app.bsoid_utilities.load_workspace import load_feats, load_embeddings
@@ -53,7 +52,7 @@ class extract:
             try:
                 [self.features, self.scaled_features] = load_feats(self.working_dir, self.prefix)
             except:
-                window = np.int(np.round(0.05 / (1 / self.framerate)) * 2 - 1)
+                window = int(np.round(0.05 / (1 / self.framerate)) * 2 - 1)
                 f = []
                 my_bar = st.progress(0)
                 for n in range(len(self.processed_input_data)):
@@ -184,7 +183,7 @@ class extract:
                         'from **{}** D into **{}** D. Move on to __Identify and '
                         'tweak number of clusters__'.format(*self.sampled_features.shape, self.sampled_embeddings.shape[1]))
             if st.checkbox('Redo?', False, key='er'):
-                caching.clear_cache()
+                st.runtime.legacy_caching.clear_cache()
                 self.subsample()
                 self.compute()
         except FileNotFoundError:

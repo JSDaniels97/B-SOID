@@ -9,7 +9,6 @@ import randfacts
 from bsoid_app.config import *
 from bsoid_app.bsoid_utilities import visuals
 from bsoid_app.bsoid_utilities.load_workspace import load_clusters
-from streamlit import caching
 
 
 class cluster:
@@ -57,7 +56,7 @@ class cluster:
         fig1, plt1 = visuals.plot_classes(self.sampled_embeddings[self.assignments >= 0],
                                           self.assignments[self.assignments >= 0])
         plt1.suptitle('HDBSCAN assignment')
-        col1, col2 = st.beta_columns([2, 2])
+        col1, col2 = st.columns([2, 2])
         col1.pyplot(fig1)
 
     def slider(self, min_=0.5, max_=1.0):
@@ -80,7 +79,7 @@ class cluster:
 
     def main(self):
         try:
-            caching.clear_cache()
+            st.runtime.legacy_caching.clear_cache()
             [self.min_cluster_size, self.assignments, self.assign_prob, self.soft_assignments] = \
                 load_clusters(self.working_dir, self.prefix)
             st.markdown(
@@ -88,18 +87,21 @@ class cluster:
                 'a model__.'.format(self.assignments.shape, self.sampled_embeddings.shape[1]))
             st.markdown('Your last saved run range was __{}%__ to __{}%__'.format(self.min_cluster_size[0],
                                                                                   self.min_cluster_size[-1]))
+
+            cb = st.checkbox("Show first 3D UMAP enhanced clustering plot?", True, key='cs')
+
             if st.checkbox('Redo?', False, key='cr'):
-                caching.clear_cache()
+                st.runtime.legacy_caching.clear_cache()
                 self.slider(min_=float(self.min_cluster_size[0]), max_=float(self.min_cluster_size[-1]))
                 self.hierarchy()
                 self.save()
-            if st.checkbox("Show first 3D UMAP enhanced clustering plot?", True, key='cs'):
+            if cb:
                 self.show_classes()
         except (AttributeError, FileNotFoundError) as e:
             self.slider()
             self.hierarchy()
             self.save()
-            if st.checkbox("Show first 3D UMAP enhanced clustering plot?", True, key='cs'):
+            if cb:
                 self.show_classes()
 
 
